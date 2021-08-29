@@ -11,7 +11,7 @@ const randomFood = (randomFoods) => {
         const div = document.createElement("div");
         div.classList.add("col-lg-4");
         div.innerHTML = `
-        <div class="card">
+        <div onclick="foodsDetails()" class="card">
           <img src="${randomFood.strCategoryThumb}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${randomFood.strCategory}</h5>
@@ -23,22 +23,27 @@ const randomFood = (randomFoods) => {
     });
 };
 // ------------------ Food Search Area ------------ 
-const getFoodInput = () =>{
-    const foodInput = document.getElementById(`food-input-main`);
+const getFoodInput = (foodInputPlace) =>{
+    const foodInput = document.getElementById(`food-input-${foodInputPlace}`);
     const inputValue = foodInput.value;
+    if(inputValue === ""){
+      document.getElementById("err-mess").style.display = "block";
+    }
+   else{
+    document.getElementById("err-mess").style.display = "none";
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputValue}`
     fetch(url)
     .then(res => res.json())
     .then(data => getSearchFood(data.meals))
     // ======= value Clear ======
     foodInput.value = "";
+   }
 };
 const getSearchFood = foods =>{
     const foodCard = document.getElementById("card-container");
     document.getElementById("section-title").style.display = "block";
     foodCard.textContent = '';
     foods.forEach(food =>{
-        console.log(food);
         const div = document.createElement("div");
         div.classList.add("col-lg-4");
         div.innerHTML = `
@@ -52,12 +57,11 @@ const getSearchFood = foods =>{
         `
         foodCard.appendChild(div);
         
-    })
-    // foodCard.appendChild(div);
+    });
 };
 document.getElementById("search-button-main").addEventListener("click", ()=>{
-    getFoodInput();
+    getFoodInput("main");
 });
-// document.getElementById("search-button-nav").addEventListener("click", ()=>{
-//     getFoodInput("nav");
-// });
+document.getElementById("search-button-nav").addEventListener("click", ()=>{
+    getFoodInput("nav");
+});
