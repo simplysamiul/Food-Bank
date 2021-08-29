@@ -43,7 +43,7 @@
 /* Main Section */
 main{
     background-color:#2D2013;
-    margin-bottom: 50px;
+    
 }
 /* search section */
 .search-section{
@@ -117,7 +117,6 @@ font-weight: bold;
 .food-list i{
     font-size: 25px;
 }
-
 /*  -----------  searching food card area ----------- */
 .indivudal-card{
     margin-bottom:80px;
@@ -137,10 +136,23 @@ font-weight: bold;
     border-top: 2px solid #d3d3d3;
     border-bottom: 2px solid #d3d3d3;
     padding : 25px 0;
-    
-
 }
-
+/* Footer Area */
+footer{
+    background-image: linear-gradient(180deg,#5e3c19,#2D2013);
+    color: #a4a2a2;
+   
+}
+footer img{
+    width:200px;
+    margin:10px 0 15px 0;
+}
+footer h2{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 0.3em;
+    padding-bottom: 25px;
+    margin-bottom:0;
+}
 
 
 

@@ -11,7 +11,7 @@ const randomFood = (randomFoods) => {
         const div = document.createElement("div");
         div.classList.add("col-lg-4");
         div.innerHTML = `
-        <div onclick="foodsDetails()" class="card">
+        <div class="card">
           <img src="${randomFood.strCategoryThumb}" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${randomFood.strCategory}</h5>
@@ -50,13 +50,12 @@ const getSearchFood = foods =>{
         <div class="card">
           <img src="${food.strMealThumb}" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${food.strMeal.slice(1,25)}</h5>
+            <h5 class="card-title">${food.strMeal}</h5>
             <p class="card-text text-muted ">${food.strInstructions.slice(5,180)}</p>
           </div>
         </div>
         `
         foodCard.appendChild(div);
-        
     });
 };
 document.getElementById("search-button-main").addEventListener("click", ()=>{
