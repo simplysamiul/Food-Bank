@@ -1,0 +1,172 @@
+/* Header Section */
+.banner img {
+    width: 100%;
+    height: 500px;
+}
+/* Navigation Section */
+.menu-bar img{
+    width: 50px;
+    height:50px;
+}
+.navbar-title{
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size:22px;
+    margin-right: 25px;
+    color: #fff !important;
+}
+.menu-bar{
+    background-color: #231a11;
+    box-shadow: 0 10px 30px #000000;
+}
+.navbar-toggler-icon{
+    background-color: #fff;
+}
+.menu-bar ul li a{
+    color: #fff !important;
+    font-family: 'Kaisei HarunoUmi', serif;
+    letter-spacing: 0.1em;
+}
+.form input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.form button{
+    background-color: #ebb7bf;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form{
+    position: right;
+}
+/* Main Section */
+main{
+    background-color:#2D2013;
+    margin-bottom: 50px;
+}
+/* search section */
+.search-section{
+    padding-top:80px;
+}
+.section-img{
+    text-align: center;
+    color: #fff;
+    margin-bottom:30px;
+}
+.search-section img{
+    width:120px;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+.search-area{
+    background-color: #5e3c19;
+    width:70%;
+    padding:20px 0;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+.search-area input{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.search-area button{
+    background-color:#ebb7bf;
+    font-size: 20px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.food-list{
+    background-color: #fff;
+    border-radius: 20px;
+    height:50px;
+}
+.food-list p{
+padding: 10px 5px;
+font-size: 22px;
+font-weight: bold;
+}
+.food-list marquee{
+    background-color: #5e3c19;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 600px;
+    font-family: 'Kaisei HarunoUmi', serif;
+    color: #fff;
+}
+.food-list i{
+    font-size: 25px;
+}
+
+/*  -----------  searching food card area ----------- */
+.indivudal-card{
+    margin-bottom:80px;
+}
+#section-title{
+    display: none;
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+    padding : 25px 0;
+
+}
+/*  -----------  random food card area ----------- */
+#random-food{
+    padding-bottom:100px;
+}
+.section-title{
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;
+    padding : 25px 0;
+    
+
+}
+
+
+
+
+
+
+
+/* responsive Area */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Header Section */
+    .banner img {
+        width: 100%;
+        height: 200px;
+    }  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* Header Section */
+    .banner img {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Header Section */
+    .banner img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Header Section */
+    .banner img {
+        width: 100%;
+        height: 500px;
+    }
+}

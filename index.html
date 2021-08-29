@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bank</title>
+    <!-- --------------- favicon link ---------------->
+    <link rel="shortcut icon" href="./resource/food.png" type="image/x-icon">
+    <!-- --------------- Bootstrap css link ---------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- --------------- Google Font link ---------------->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- --------------- Font Awesome cdn link ---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --------------- Custom css link ---------------->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header>
+    <!--------- Header banner Area (carousel) --------------------->
+    <section class="banner">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./resource/banner-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./resource/banner-4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./resource/banner-2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!--------- Navigation Area --------------------->
+    <nav>
+      <nav class="navbar navbar-expand-lg navbar-light menu-bar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./resource/food.png" alt="" width="30" height="24">
+          </a>
+          <a class="navbar-title" href="#">Food Bank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex form">
+              <input id="food-input-nav" class="form-control" type="search" placeholder="Search-food">
+              <button id="search-button-nav"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+    <section class="search-section mb-5">
+      <div class="section-img">
+        <img src="./resource/food-1.png" alt="">
+      </div>
+      <h1>Welcome To Our Foob-Bank</h1>
+      <div class="search-area d-flex justify-content-center mx-auto">
+        <input id="food-input-main" class="form-control p-2 w-50" type="search" placeholder="Search-food">
+        <button id="search-button-main"><i class="fas fa-search"></i></button>
+      </div>
+    </section>
+    <div class="food-list d-flex mb-5">
+        <p>Food:</p>
+      <marquee>sardines, Bean Stew, lamb peka, Soup, Keleya, Fish pie, Fish fofos, Chicken, Dessert, Beef, Miscellaneous etc.</marquee>
+      <p><i class="fas fa-angle-double-left"></i></p>
+    </div>
+  </div>
+  <section id="food-card mt-4" class="indivudal-card">
+    <h1 id="section-title" class="mb-5">Searching Food</h1>
+    <div id="card-container" class="row row-cols-1 row-cols-md-2 g-5 container  mx-auto">
+    </div>
+  </section>
+  <section id="random-food">
+    <h1 class="section-title mt-4 mb-4">Random Testy Food</h1>
+    <div id="init-card" class="row row-cols-1 row-cols-md-2 g-5 container  mx-auto">
+    </div>
+  </section>
+  </main>
+     
+
+  <!-- --------------- Bootstrap css link ---------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <!-- --------------- Js file link ---------------->
+  <script src="./js/app.js"></script>
+</body>
+</html>
